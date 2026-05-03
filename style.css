@@ -141,12 +141,14 @@ nav.scrolled {
   border: 1.5px solid var(--dark);
   border-radius: 220px 220px 0 0;
   overflow: hidden;
+  aspect-ratio: 3 / 4;
 }
 
 .hero-arch img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: cover;
   object-position: center top;
   filter: grayscale(5%);
   transition: transform 0.6s ease;
@@ -374,7 +376,8 @@ section:nth-child(even) {
 
 .photo-card img {
   width: 100%;
-  height: auto;
+  height: 280px;
+  object-fit: cover;
   display: block;
   transition: transform 0.6s ease;
 }
@@ -390,8 +393,8 @@ section:nth-child(even) {
 }
 
 .photo-card.has-caption img {
-  height: auto;
-  flex: 1;
+  height: 220px;
+  flex: none;
 }
 
 .caption {
